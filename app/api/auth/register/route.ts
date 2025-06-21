@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     const newUser = await User.create({ email, password });
 
     return NextResponse.json(
-      { message: "User registered successfully", newUser },
+      { message: "User registered successfully", newUser  },
       { status: 201 }
     );
   } catch (error) {
