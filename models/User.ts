@@ -33,4 +33,4 @@ userSchema.pre("save", async function (next) {
 });
 
 // since nextJS runs on edge servers so this approach is taken
-const User = models?.User || model<IUser>("User", userSchema);
+export const User = models?.User || model<IUser>("User", userSchema);
